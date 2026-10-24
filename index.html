@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Regulations Comparison | VAC Capstone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand"><span class="brand-mark">AI</span><span>Regulation Lens</span></div>
+      <a href="#sources" class="nav-link">Official Sources</a>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">VAC CAPSTONE PROJECT</p>
+      <h1>AI Regulations<br><span>Comparison Dashboard</span></h1>
+      <p class="hero-copy">Explore how selected regions approach AI governance, risk, transparency, and accountability.</p>
+      <a class="primary-button" href="#compare">Explore comparison <span aria-hidden="true">→</span></a>
+      <p class="disclaimer">Educational overview only — not legal advice.</p>
+    </div>
+    <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+  </header>
+
+  <main>
+    <section class="stats" aria-label="Project overview">
+      <article class="stat-card"><span class="stat-icon">◎</span><p class="stat-label">Regions compared</p><strong>2</strong><small>India and European Union</small></article>
+      <article class="stat-card"><span class="stat-icon">⌘</span><p class="stat-label">Comparison themes</p><strong>5</strong><small>Scope, risk, transparency, etc.</small></article>
+      <article class="stat-card"><span class="stat-icon">↗</span><p class="stat-label">Source approach</p><strong>Official</strong><small>Government / EU references</small></article>
+    </section>
+
+    <section class="section" id="compare">
+      <div class="section-heading">
+        <div><p class="eyebrow">SIDE-BY-SIDE VIEW</p><h2>Compare AI governance</h2></div>
+        <p class="section-description">Choose a theme to narrow the comparison. Summaries are simplified for student learning.</p>
+      </div>
+      <div class="toolbar">
+        <label for="themeFilter">Filter by theme</label>
+        <select id="themeFilter">
+          <option value="all">All themes</option>
+          <option value="approach">Overall approach</option>
+          <option value="risk">Risk management</option>
+          <option value="transparency">Transparency</option>
+          <option value="accountability">Accountability</option>
+          <option value="innovation">Innovation</option>
+        </select>
+        <input id="searchInput" type="search" placeholder="Search themes or keywords..." aria-label="Search comparison">
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Theme</th><th>India — overview</th><th>European Union — AI Act</th></tr></thead>
+          <tbody id="comparisonBody"></tbody>
+        </table>
+      </div>
+      <p class="result-count" id="resultCount" aria-live="polite"></p>
+    </section>
+
+    <section class="section insight-section">
+      <div class="section-heading"><div><p class="eyebrow">KEY TAKEAWAYS</p><h2>What stands out?</h2></div></div>
+      <div class="insight-grid">
+        <article class="insight-card"><span class="number">01</span><h3>Different policy approaches</h3><p>The EU has a dedicated AI Act with risk-based obligations. India's approach includes policy guidance and a broader, evolving governance ecosystem.</p></article>
+        <article class="insight-card"><span class="number">02</span><h3>Risk matters</h3><p>AI systems used in sensitive areas can affect people’s safety and rights. Risk assessment and suitable safeguards are important considerations.</p></article>
+        <article class="insight-card"><span class="number">03</span><h3>Rules can change</h3><p>AI policy develops over time. Always check the latest official text and implementation dates before making compliance decisions.</p></article>
+      </div>
+    </section>
+
+    <section class="section sources-section" id="sources">
+      <div class="section-heading"><div><p class="eyebrow">REFERENCES</p><h2>Official sources</h2></div><p class="section-description">Use these primary sources for your report and presentation.</p></div>
+      <div class="source-list">
+        <a class="source-card" href="https://www.meity.gov.in/" target="_blank" rel="noopener noreferrer"><span class="source-tag">INDIA</span><span><strong>Ministry of Electronics and Information Technology (MeitY)</strong><small>Official government portal; search for current AI governance guidelines and policy documents.</small></span><span class="external">↗</span></a>
+        <a class="source-card" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener noreferrer"><span class="source-tag eu">EU</span><span><strong>European Commission — AI Act</strong><small>Official overview of the risk-based framework and implementation timeline.</small></span><span class="external">↗</span></a>
+        <a class="source-card" href="https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act" target="_blank" rel="noopener noreferrer"><span class="source-tag eu">EU</span><span><strong>European Commission — Navigating the AI Act</strong><small>Frequently asked questions about scope, governance and application dates.</small></span><span class="external">↗</span></a>
+      </div>
+      <p class="source-note">Research note: this dashboard is a simplified educational comparison, not a complete legal analysis. Verify the latest documents and dates on the official websites.</p>
+    </section>
+  </main>
+  <footer><span>AI Regulation Lens</span><span>Student capstone • Educational use</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
